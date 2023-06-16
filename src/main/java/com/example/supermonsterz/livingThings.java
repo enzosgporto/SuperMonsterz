@@ -10,7 +10,7 @@ public class livingThings {
         this.health = health;
     }
 
-    public livingThings(String name, int speed, int health){
+    public livingThings(String name, int health, int speed){
         this.name = name;
         this.health = health;
         this.speed = speed;
