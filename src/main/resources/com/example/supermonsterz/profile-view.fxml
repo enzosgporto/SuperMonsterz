@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.Label?>
@@ -8,23 +9,31 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox alignment="CENTER" prefHeight="520.0" prefWidth="297.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.supermonsterz.ProfileController">
+<VBox alignment="CENTER" prefHeight="520.0" prefWidth="297.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supermonsterz.ProfileController">
    <children>
       <Label text="Player Creation Screen" />
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
          <children>
-            <Label text="Name: " />
-            <TextField />
+            <Label prefHeight="16.0" prefWidth="63.0" text="Name: " />
+            <TextField fx:id="nameField" prefHeight="24.0" prefWidth="185.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></TextField>
          </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
       </HBox>
-      <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="202.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
          <children>
             <Label text="Favorite Color: " />
-            <ColorPicker />
+            <ColorPicker fx:id="colorSelector" />
          </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
       </HBox>
       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-      <Button mnemonicParsing="false" text="Button" />
+      <Button fx:id="playButton" mnemonicParsing="false" onAction="#playAction" prefHeight="37.0" prefWidth="106.0" text="Play" />
    </children>
 </VBox>
