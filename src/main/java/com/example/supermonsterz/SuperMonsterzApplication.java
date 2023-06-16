@@ -1,5 +1,6 @@
 package com.example.supermonsterz;
 
+import com.example.supermonsterz.characters.player;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,7 +20,7 @@ public class SuperMonsterzApplication extends Application {
         stage.show();
     }
 
-    static void setScene(String controllerName) throws IOException{
+    public static void setScene(String controllerName) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(SuperMonsterzApplication.class.getResource(controllerName));
         scene.setRoot(fxmlLoader.load());
     }

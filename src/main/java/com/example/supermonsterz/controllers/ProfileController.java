@@ -1,10 +1,10 @@
-package com.example.supermonsterz;
+package com.example.supermonsterz.controllers;
 
+import com.example.supermonsterz.SuperMonsterzApplication;
+import com.example.supermonsterz.characters.player;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
