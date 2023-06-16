@@ -5,7 +5,7 @@ public class livingThings {
     int speed;
     int health;
 
-    public livingThings(String name, int speed){
+    public livingThings(String name, int health){
         this.name = name;
         this.health = health;
     }
